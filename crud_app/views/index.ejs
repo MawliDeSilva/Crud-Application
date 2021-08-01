@@ -1,0 +1,69 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St Anthony's Stores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zck9k=qN">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head> -->
+<!-- <body>
+    <header id="header">
+        <nav>
+            <div class ="container">
+                <div class = "text-center">
+                    <a href="/" class="nav-brand text-dark">User management</a>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between"></div>
+        <a href="/add-user" class="border-shadow">
+        <span class="text-gradient">New User<i class="fas fa-user"></i></span>
+        </a>
+    </div>
+    <form action="/" method="POST">
+        <table class="table"> 
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>GENDER</th>
+                    <th>STATUS</th>
+                    <th>UPDATE/DELETE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>User</td>
+                    <td>example@gmail.com</td>
+                    <td>Male</td>
+                    <td>Active</td>
+                    <td>
+                        <a href="#" class="btn border-shadow update"></a>
+                        <span class ="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                        </a>
+                        <a href="#" class="btn border-shadow delete"></a>
+                        <span class ="text-gradient"><i class="fas fa-times"></i></span>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </form>
+</main>
+<!-- </body>
+</html> -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
